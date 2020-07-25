@@ -1,5 +1,15 @@
 # Mini R52/53 Chrono Pack reverse engineering, Mileage & VIN Coding
 
+### Current status :
+
+1. IC identification : **OK**
+2. Tracing : **OK**
+3. CPU BDM learning : **Currently working on it**
+4. BDM code writing : TODO
+5. Testing : TODO
+6. Binary modification (need to find where info are and how to encode/decode them) : TODO
+7. Step by Step guide writing : TODO
+
 ### PCB chip identification
 
 ![pcb](/pictures/reverse_pcb.jpeg)
