@@ -16,6 +16,10 @@
 
 [CPU datasheet](/pictures/cpu_datasheet.pdf)
 
+[Flash programming](/pictures/flash_programming.pdf)
+
+[BDM app note](/pictures/BDM_for_M68HC12.pdf)
+
 ### CPU Pinout
 
 ![pinout](/pictures/pinout.JPG)
@@ -23,3 +27,7 @@
 ### 10 pins program header
 
 ![10_pin](/pictures/10_pin_header.jpg)
+
+### USBDM 6 pins BDM Pinout
+
+![6_pin](/pictures/bdm_pinout.jpg)
