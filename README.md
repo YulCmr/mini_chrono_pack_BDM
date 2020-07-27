@@ -66,6 +66,8 @@ Coaxial
 
 ### Tutorial + infos
 
+Thx to theses guys : https://www.northamericanmotoring.com/forums/r50-r53-hatch-talk-2002-2006/344533-chrono-pack-retrofit-all-the-info-you-need-hopefully.html
+
 HW for chrono gauges is 30, for nav its 08. Currently don't know what to do of this info ¯\_(ツ)_/¯
 
 KM & VIN are stored in the 2Kb Eeprom (not the 128Kb one)
