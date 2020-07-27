@@ -63,3 +63,40 @@ Coaxial
 
 **CHRONO**
 ![chrono](/pictures/chrono_pinout.png)
+
+### Tutorial + infos
+
+HW for chrono gauges is 30, for nav its 08. Currently don't know what to do of this info ¯\_(ツ)_/¯
+
+KM & VIN are stored in the 2Kb Eeprom (not the 128Kb one)
+
+According to "AutoMutt" on namotoring.com :
+
+VIN is stored from 0x600 to 0x670, and Mileage is stored from 0x400 to 0x470
+
+Best practice seems to be : copy theses blocks from original cluster, then paste in new cluster binary.
+
+![VIN](/pictures/VIN_add.jpg)
+
+
+**Update ZCS :**
+- Plug cable into OBD2 port and connect
+- Open NCS Expert
+- Load Revtor profile
+- Press F1 (VIN/ZCS/FA)
+- Press F3 (VIN/FA f. ECU)
+- Choose: Chasis R50 (for R50/R52/R53)
+- Choose: EWS (To get current data from your auto)
+- Now you will see the GM/SA/VN. Take a pic or write this down.
+- Press F3 (VIN/FA f. ECU)
+- Choose: Chasis R50 (for R50/R52/R53)
+- Choose: KMB (To get data from replacement kombi, You will notice the GM/SA/VN is different)
+- Press F1 (Enter ZCS)
+- Enter the data you took a pic of or wrote down from earlier step
+- Press F6 (Back)
+- Press F4 (Process ECU ***do NOT press Process Car***)
+- Choose: KMB
+- Press F2 (Change Job)
+- Choose: ZCS-SCHREIBEN (This means ZCS_WRITE)
+- Press F3 (Execute Job)
+- Close NCS Expert
