@@ -4,8 +4,8 @@
 
 1. IC identification : **OK**
 2. Tracing : **OK**
-3. CPU BDM learning : **Currently working on it**
-4. BDM code writing : TODO
+3. CPU BDM learning : **OK**
+4. BDM code writing : **Aborted, needs new dev board which costs at least the price of a R270 programmer in china.... Not worth the effort**
 5. Testing : TODO
 6. Binary modification (need to find where info are and how to encode/decode them) : TODO
 7. Step by Step guide writing : TODO
