@@ -47,15 +47,15 @@ Wire color :
 - GREEN = PE7 / xclks
 
 R260 - R270
-- Black 26
-- Red 1
-- Yellow 7
-- Purple 19
-- XCLKS 5
+- Black / GND / 26
+- Red / 5v / 1
+- Yellow / RST / 7
+- Purple / BKGD /19
+- Green / XCLKS / 5
 
 Coaxial
-- White 8
-- Black 24
+- White / ECLK / 8
+- Black / ECLK_REF / 24
 
 ### Nav & Chronopack pinout
 **NAV**
