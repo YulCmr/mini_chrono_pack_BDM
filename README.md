@@ -80,6 +80,10 @@ Best practice seems to be : copy theses blocks from original cluster, then paste
 
 ![VIN](/pictures/VIN_add.jpg)
 
+If you use a R270, you most likely corrupted your flash while trying to read it (seems very common and occured to me aswell... Needles were completly off as soon as I plugged Kombi in car...)
+To solve this, reflash theses files :
+- [Flash](HW30_SW23_R270_FLASH.bin)
+- [Eeprom with 0km on odometer](HW30_SW23_R270_EEPROM_0km.bin) <-- You still need to write you VIN in this file
 
 **Update ZCS :**
 - Plug cable into OBD2 port and connect
