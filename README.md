@@ -113,11 +113,11 @@ HW08:
 - Press F3 (Execute Job)
 - Close NCS Expert
 
-TL;DR
-Using R270, upload flash, then eeprom to the cluster.
-Connect the cluster to the car (if the odometer reads something like 250km, your flashing was successful).
-Using NCSExpert read vehicle data from EWS (VIN/FA f. ECU).
-Then do a ZCS_LESEN on EWS and a ZCS_SCHREIBEN on KMB.
-Then do a FGNR_LESEN on EWS and a FGNR_SCHREIBEN on KMB.
-Now turn the ignition off an on and you should see your mileage appear in the instrument cluster.
-Optional step is to code the KBM module using NCSExpert/NCSDummy.
+**TL;DR**
+- Using R270, upload flash, then eeprom to the cluster.
+- Connect the cluster to the car (if the odometer reads something like 250km, your flashing was successful).
+- Using NCSExpert read vehicle data from EWS (VIN/FA f. ECU).
+- Then do a ZCS_LESEN on EWS and a ZCS_SCHREIBEN on KMB.
+- Then do a FGNR_LESEN on EWS and a FGNR_SCHREIBEN on KMB.
+- Now turn the ignition off an on and you should see your mileage appear in the instrument cluster.
+- Optional step is to code the KBM module using NCSExpert/NCSDummy.
