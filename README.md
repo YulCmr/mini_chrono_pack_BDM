@@ -68,7 +68,7 @@ Coaxial
 
 Thx to theses guys : https://www.northamericanmotoring.com/forums/r50-r53-hatch-talk-2002-2006/344533-chrono-pack-retrofit-all-the-info-you-need-hopefully.html
 
-HW for chrono gauges is 30, for nav its 08. Currently don't know what to do of this info ¯\_(ツ)_/¯
+HW for chrono gauges is 30, for nav its 08. Flash and EEPROM files are sensitive to HW version so be careful which one you flash.
 
 KM & VIN are stored in the 2Kb Eeprom (not the 128Kb one)
 
@@ -82,8 +82,14 @@ Best practice seems to be : copy theses blocks from original cluster, then paste
 
 If you use a R270, you most likely corrupted your flash while trying to read it (seems very common and occured to me aswell... Needles were completly off as soon as I plugged Kombi in car...)
 To solve this, reflash theses files :
+
+HW30:
 - [Flash](HW30_SW23_R270_FLASH.bin)
-- [Eeprom with 0km on odometer](HW30_SW23_R270_EEPROM_0km.bin) <-- You still need to write you VIN in this file
+- [Eeprom with 0km on odometer](HW30_SW23_R270_EEPROM_0km.bin) <-- You still need to write you VIN in this file (or see TL;DR at the bottom of the page)
+
+HW08:
+- [Flash](HW08_SW23_R270_FLASH.bin)
+- [Eeprom with 0km on odometer](HW08_SW23_R270_EEPROM_0km.bin) <-- You still need to write you VIN in this file (or see TL;DR at the bottom of the page)
 
 **Update ZCS :**
 - Plug cable into OBD2 port and connect
@@ -106,3 +112,12 @@ To solve this, reflash theses files :
 - Choose: ZCS-SCHREIBEN (This means ZCS_WRITE)
 - Press F3 (Execute Job)
 - Close NCS Expert
+
+**TL;DR**
+- Using R270, upload flash, then eeprom to the cluster.
+- Connect the cluster to the car (if the odometer reads something like 250km, your flashing was successful).
+- Using NCSExpert read vehicle data from EWS (VIN/FA f. ECU).
+- Then do a ZCS_LESEN on EWS and a ZCS_SCHREIBEN on KMB.
+- Then do a FGNR_LESEN on EWS and a FGNR_SCHREIBEN on KMB.
+- Now turn the ignition off an on and you should see your mileage appear in the instrument cluster.
+- Optional step is to code the KBM module using NCSExpert/NCSDummy.
